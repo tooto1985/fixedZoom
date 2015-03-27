@@ -3,21 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>fixedZoom</title>
+	<style>
+		div.fixed {
+			width:400px;
+			height:100px;
+			background-color:#ccc;
+		}
+	</style>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="//rawgit.com/tooto1985/fixedZoom/gh-pages/jquery.fixedZoom.js"></script>
 	<script>
 	$(function() {
-		$("#fixed").fixedZoom();
+		$(".fixed").fixedZoom();
 	});
 	</script>
-	
 </head>
 <body>
-	<h2>請使用Ctrl+滑鼠滾輪改變縮放大小</h2>
-	
-	<h2>沒有被固定的文字<h2>
-
-	<h2 id="fixed">有被固定的文字<h2>
-	
+	<h1>請使用Ctrl+滑鼠滾輪改變縮放大小</h1>
+	<h1>沒有被固定的文字<h1>
+	<h1 class="fixed">有被固定的文字<h1>
+	<div>沒有被固定的區塊</div>
+	<div class="fixed">有被固定的區塊</div>
 </body>
 </html>
