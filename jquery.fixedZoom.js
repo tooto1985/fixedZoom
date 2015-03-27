@@ -1,8 +1,7 @@
 (function($) {
-	var sid=null;
 	$.fn.fixedZoom = function() {
 		var _this = this;
-		function run() {
+		$(window).resize(function() {
 			var _size;
 			if (!screen.deviceXDPI && !screen.logicalXDPI) {
 				_size = window.devicePixelRatio;
@@ -15,10 +14,6 @@
 					"-moz-transform": "scale(" + 1 / _size + ")"
 				});
 			});
-		}
-		$(window).resize(function() {
-			if (sid !== null) clearTimeOut(sid);
-			sid = setTimeout(run,200);
 		});
 		return this;
 	};
