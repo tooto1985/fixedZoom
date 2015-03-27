@@ -2,7 +2,7 @@
 	var sid=null;
 	$.fn.fixedZoom = function() {
 		var _this = this;
-		function run(_this) {
+		function run() {
 			var _size;
 			if (!screen.deviceXDPI && !screen.logicalXDPI) {
 				_size = window.devicePixelRatio;
