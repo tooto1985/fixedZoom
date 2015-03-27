@@ -17,7 +17,7 @@
 			});
 		}
 		$(window).resize(function() {
-			sid !== null && clearTimeOut(sid);
+			if (sid !== null) clearTimeOut(sid);
 			sid = setTimeout(run,200);
 		});
 		return this;
