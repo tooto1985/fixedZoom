@@ -15,7 +15,7 @@
 				});
 			});
 		}
-	});
+	}).resize();
 	$.fn.fixedZoom = function() {
 		if (_object === null ) {
 			_object = this;
