@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>fixedZoom</title>
+	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css" />
 	<style>
-		div {
+		.div {
 			width:400px;
 			height:100px;
 			background-color:#ccc;
 		}
 	</style>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	<script src="http://rawgit.com/tooto1985/fixedZoom/gh-pages/jquery.fixedZoom.js"></script>
 	<script>
 	$(function() {
@@ -20,18 +22,18 @@
 </head>
 <body>
 	<a href="https://github.com/tooto1985/fixedZoom"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-	<h1>請使用Ctrl+滑鼠滾輪改變縮放大小</h1>
-	<h1>沒有被固定的文字<h1>
-	<h1 class="fixed">有被固定的文字<h1>
-	<div>沒有被固定的區塊</div>
-	<div class="fixed">有被固定的區塊</div>
-	<p>使用方式：</p>
-	<p>&lt;script src="http://rawgit.com/tooto1985/fixedZoom/gh-pages/jquery.fixedZoom.js"&gt;&lt;/script&gt;<br>
-	&lt;script&gt;<br>
-	$(function() {<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;$(".fixed").fixedZoom();<br>
-	});<br>
-	&lt;/script&gt;
-	</p>
+	<h2>This is a fixed screen jQuery Plug-in when use mouse wheel.</h2>
+	<h2>Please use ctrl + mouse wheel test.</h2>
+	<h3>Example1:</h3>
+	<h1>No fixed text!</h1>
+	<h1 class="fixed">Has fixed text!</h1>
+	<h3>Example2:</h3>
+	<div class="div btn btn-default">No fixed area!</div>
+	<br>
+	<div class="div btn btn-default fixed">Has fixed area!</div>
+	
+	<h3>How to use :</h3>
+	<script src="https://gist.github.com/tooto1985/89905a27f51d4b7cc3e2.js"></script>
+	
 </body>
 </html>
