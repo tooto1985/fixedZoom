@@ -1,9 +1,6 @@
 fixedZoom.js
 ============
 
-demo: http://tooto1985.github.io/fixedZoom/
--------------------------------------------
+* This is a fixed screen jQuery Plug-in when use mouse wheel. Please use ctrl + mouse wheel test.
 
-可以避免瀏覽器使用「Ctrl + 滑鼠滾輪」改變檢視縮放大小導致版面跑版問題，
-
-使用 fixedZoom.js 可以固定大小不受檢視縮放大小影響。
+* demo: http://tooto1985.github.io/fixedZoom/
